@@ -7,10 +7,11 @@ import java.util.List;
 import java.util.stream.Collectors;
 
 public class CarServicelmpl implements CarService {
+    public List<Car> carList;
 
     @Override
     public List<Car> carList(Integer count) {
-        List<Car> carList = new ArrayList<>();
+        carList = new ArrayList<>();
         carList.add(new Car("Lada", 66, "Brown"));
         carList.add(new Car("Ford", 911, "Blue"));
         carList.add(new Car("Porsche", 780, "Yellow"));
