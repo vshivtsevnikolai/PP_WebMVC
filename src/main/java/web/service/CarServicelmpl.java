@@ -1,11 +1,15 @@
 package web.service;
 
+import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Transactional;
 import web.model.Car;
 
 import java.util.ArrayList;
 import java.util.List;
 import java.util.stream.Collectors;
 
+@Service
+@Transactional
 public class CarServicelmpl implements CarService {
     public List<Car> carList;
 
